@@ -7,7 +7,58 @@ body {
 
 
 .main-bg{
-  background-color: hsl(228, 100%, 84%);
+  background-color: hsl(206, 94%, 87%);
   width: 375px;
-  height: 100vh;
+  height: 90vh;
+  position: relative;
+}
+
+.bar-progress-bg {
+  background-image: url('/images/bg-sidebar-mobile.svg'); /* ปรับ path ให้ถูกต้อง */
+  background-size: cover; /* ปรับให้เต็มพื้นที่ */
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 150px; /* ปรับตามต้องการ */
+}
+
+
+.next-section-bg{
+  background-color: white;
+  width: 375px;
+  height: 10vh; /* ปรับตามต้องการ */
+  display: flex;
+  justify-content: space-between;
+}
+
+.space-button{
+  background-color: hsl(0, 0%, 100%);
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.next-button{
+  background-color: hsl(213, 96%, 18%);
+  width: 100px;
+  height: 40px;
+  color: white;
+  border-radius: 5px;
+}
+
+.back-button{
+  background-color: transparent;
+  color: hsl(231, 11%, 63%);
+  border: none;
+}
+
+.input-space-bg{
+  width: 340px;
+  height: 350px;
+  background-color: hsl(231, 100%, 99%);
+  position: absolute;
+  left: 16px;
+  top: 100px;
+  border-radius: 5px;
 }
