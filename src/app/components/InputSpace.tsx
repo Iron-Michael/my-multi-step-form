@@ -1,22 +1,24 @@
 "use client"
-import React, { useEffect } from 'react'
-import { useDispatch,useSelector } from 'react-redux';
+import React from 'react';
 
 type Props = {}
 
 const InputSpace = (props: Props) => {
-
-const step = useSelector((state: any) => state.step);  
-
-    useEffect(()=>{
-        console.log("step",step);     
-    },[step])
-
   return (
     <div className='input-space-bg'>
-        
+      <div style={{ width: "90%" }}>
+        <h1 className='header'>Personal Info</h1>
+        <label className='description'>Please provide name, email address, and phone number</label>
+
+       <div className="input-top-label">
+        <div>
+        <label htmlFor="input-name">Name</label>
+        </div>
+        <input type="text" id="input-name" placeholder="Enter your name" />
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default InputSpace
+export default InputSpace;
